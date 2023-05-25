@@ -43,7 +43,7 @@ class Interpol(Function):
         return result
 
     @staticmethod
-    # @jit.script
+    @jit.script
     def backward_cuda(
         grad_output,
         grid_values,
